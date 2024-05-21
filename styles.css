@@ -1,0 +1,143 @@
+:root {
+    --tertiary-color: #865d36;
+    --secondary-color: #3e362e;
+    --main-color: #ac8968;
+    --quaternary-color: #93785b;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    font-family: 'Rubik';
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 93vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 40px 20px 40px;
+    background-color: var(--secondary-color);
+    margin: 20px;
+}
+
+#input-container-title {
+    padding: 0;
+    margin: 10px;
+}
+
+#cash {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+#purchase-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 1.25rem;
+}
+
+#purchase-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#results-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--secondary-color);
+    margin: 20px;
+}
+
+#results-container p {
+    padding: 0;
+    margin: 10px;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    padding: 0 40px 0 40px;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+#change-in-drawer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    padding: 0 40px 20px 40px;
+    background-color: var(--secondary-color);
+    margin: 20px;
+    font-size: 1.25rem;
+}
+
+#change-in-drawer p {
+    margin: 0;
+}
+
+/* footer */
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--quaternary-color);
+}
